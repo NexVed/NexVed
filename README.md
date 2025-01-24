@@ -41,7 +41,7 @@
 </div>
 
 <div align="center">
-  <p><a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=Utkarsh343" alt="Utkarsh343" /></a></p>
+  <p><a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=Utkarsh343&theme=onedark" alt="Utkarsh343" /></a></p>
 </div>
 
 <picture align="center">
