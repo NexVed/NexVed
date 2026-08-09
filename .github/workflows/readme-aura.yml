@@ -30,19 +30,21 @@ jobs:
           fps: 24
           no-amend: true
       - name: Generate GitHub stats card
-        uses: readme-tools/github-readme-stats-action@v1
+        uses: stats-organization/github-readme-stats-action@v2
         with:
           card: stats
           options: "username=NexVed&show_icons=true&bg_color=30,050505,18130b&title_color=f5c76b&text_color=fff7e6&icon_color=f5c76b&border_color=d99b3d&hide_border=false"
           path: assets/github-stats.svg
           token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
       - name: Generate top languages card
-        uses: readme-tools/github-readme-stats-action@v1
+        uses: stats-organization/github-readme-stats-action@v2
         with:
           card: top-langs
           options: "username=NexVed&layout=compact&langs_count=8&bg_color=30,050505,18130b&title_color=f5c76b&text_color=fff7e6&border_color=d99b3d&hide_border=false"
           path: assets/github-languages.svg
           token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
       - name: Generate README
         uses: collectioneur/readme-aura@main
         with:
