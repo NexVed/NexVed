@@ -1,26 +1,32 @@
-name: Generate README
+name: Update Profile README
 
 on:
   push:
     branches: [main]
     paths:
       - readme.source.md
-      - .github/workflows/readme-aura.yml
+      - .github/workflows/readme.yml
   schedule:
-    - cron: '0 6 * * *'
+    - cron: "0 6 * * *"
   workflow_dispatch:
 
 permissions:
   contents: write
 
+concurrency:
+  group: profile-readme
+  cancel-in-progress: false
+
 jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
+      - name: Check out profile repository
+        uses: actions/checkout@v6
         with:
           fetch-depth: 2
-      - name: Generate GitHub space shooter
+
+      - name: Generate contribution space shooter
         uses: czl9707/gh-space-shooter@v2
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
@@ -29,6 +35,7 @@ jobs:
           strategy: row
           fps: 24
           no-amend: true
+
       - name: Generate GitHub stats card
         uses: stats-organization/github-readme-stats-action@v2
         with:
@@ -37,6 +44,7 @@ jobs:
           path: assets/github-stats.svg
           token: ${{ secrets.GITHUB_TOKEN }}
           fail_on_error: true
+
       - name: Generate top languages card
         uses: stats-organization/github-readme-stats-action@v2
         with:
@@ -45,14 +53,16 @@ jobs:
           path: assets/github-languages.svg
           token: ${{ secrets.GITHUB_TOKEN }}
           fail_on_error: true
-      - name: Generate README
+
+      - name: Render readme-aura components and README
         uses: collectioneur/readme-aura@main
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-      - name: Commit generated files
+
+      - name: Commit generated README assets
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add README.md .github/assets assets/github-stats.svg assets/github-languages.svg assets/github-space-shooter.gif
-          git commit -m "Update GitHub profile cards" || exit 0
+          git commit -m "Update profile README" || exit 0
           git push
