@@ -53,13 +53,6 @@
     alt="Utkarsh Raturi most used languages"
     height="190"
   />
-  <br /><br />
-  <img
-    src="https://streak-stats.demolab.com?user=NexVed&background=30,050505,18130b&border=d99b3d&stroke=d99b3d&ring=f5c76b&fire=f5c76b&currStreakNum=ffffff&sideNums=f5c76b&currStreakLabel=f5c76b&sideLabels=fff7e6&dates=c9a85a&border_radius=14"
-    alt="Utkarsh Raturi GitHub streak stats"
-    width="68%"
-  />
-  <br /><br />
   <img
     src="https://github-readme-activity-graph.vercel.app/graph?username=NexVed&bg_color=050505&color=fff7e6&line=f5c76b&point=ffffff&area=true&area_color=d99b3d&title_color=f5c76b&border_color=d99b3d&radius=14&custom_title=Utkarsh%20Raturi's%20Contribution%20Graph"
     alt="Utkarsh Raturi GitHub contribution graph"
