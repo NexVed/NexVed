@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">Utkarsh Raturi&#39;s GitHub Stats, Rank: C</title>
-        <desc id="descId">Total Stars Earned: 2, Total Commits: 77, Total PRs: 0, Total Issues: 0, Contributed to (all time): 6</desc>
+        <desc id="descId">Total Stars Earned: 2, Total Commits  : 77, Total PRs: 0, Total Issues: 0, Contributed to (all time): 6</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 232.8843471717638;
+        stroke-dashoffset: 238.94690757401045;
       }
     }
   
@@ -243,3 +243,4 @@
   
         </g>
       </svg>
+    
