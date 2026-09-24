@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="44" viewBox="0 0 150 44" role="img" aria-label="HackerRank">
+  <title>HackerRank</title>
+  <defs>
+    <linearGradient id="border" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f5dfb4"/>
+      <stop offset=".55" stop-color="#ba833a"/>
+      <stop offset="1" stop-color="#f5dfb4"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="148" height="42" rx="21" fill="#477a3c" stroke="url(#border)" stroke-width="1.5"/>
+  <path d="M0 0v24h24V0zm9.95 8.002h1.805c.061 0 .111.05.111.111v7.767c0 .061-.05.111-.11.111H9.95c-.061 0-.111-.05-.111-.11v-2.87H7.894v2.87c0 .06-.05.11-.11.11H5.976a.11.11 0 01-.11-.11V8.112c0-.06.05-.11.11-.11h1.806c.061 0 .11.05.11.11v2.869H9.84v-2.87c0-.06.05-.11.11-.11zm2.999 0h5.778c.061 0 .111.05.111.11v7.767a.11.11 0 01-.11.112h-5.78a.11.11 0 01-.11-.11V8.111c0-.06.05-.11.11-.11z" fill="#fff" transform="translate(25.5 14) scale(.666667)"/>
+  <text x="49.5" y="26.5" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">HackerRank</text>
+</svg>
